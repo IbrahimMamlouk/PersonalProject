@@ -1,0 +1,98 @@
+/* 1. Remove default browser margins and reset box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Make the app take up 100% of the screen */
+html, body, #root {
+  width: 100%;
+  height: 100vh;
+}
+
+/* 3. Main container layout */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 4. Centered navigation bar */
+.navbar {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #0b132b;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width:120px;
+  padding:10px;
+  background-color:transparent;
+  border:none;
+  font-size:13pt;
+  font-weight: bold;
+  color:white;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+}
+
+.navbar a:hover{
+  border:1px solid #39ff88;
+  box-shadow: 2px 2px 6px white;
+  border-radius: 6px;
+  background-color: #39ff88;
+  color: #0b132b;
+  transition: background-color 0.3s ease;
+}
+
+.search-form{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 24px;
+}
+
+.search-input{
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  font-family: calibri;
+}
+
+.search-btn{
+  padding: 6px 14px;
+  background-color:#0b132b;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-btn svg{
+  width: 22px;
+  height: 22px;
+  fill: currentcolor;
+}
+
+.search-btn:hover{
+  color: #39ff88;
+  transition: background-color 0.3s ease;
+}
+
+

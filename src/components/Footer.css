@@ -1,0 +1,17 @@
+.footer{
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #0b132b;
+  color: white;
+  font-family: calibri;
+  text-align: center;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #39ff88;
+}
+
+.footer a:hover{
+  text-shadow: 2px 2px 2px grey;
+}
